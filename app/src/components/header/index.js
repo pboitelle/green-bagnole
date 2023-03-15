@@ -5,8 +5,13 @@ import style from './style.css';
 const Header = () => (
 	<header class={style.header}>
 		<a href="/" class={style.logo}>
-			<img src="../../assets/preact-logo-inverse.svg" alt="Preact Logo" height="32" width="32" />
+			<picture>
+				<source srcSet="../../assets/SELLCAR.avif" type="image/avif" />
+				<source srcSet="image.webp" type="image/webp" />
+				<img height="75" width="75" decoding="async" loading="lazy" src="../../assets/SELLCAR.avif" alt="an avif image" />
+				</picture>
 			<h1>Preact CLI</h1>
+			
 		</a>
 		<nav>
 			<Link activeClassName={style.active} href="/">
