@@ -7,7 +7,7 @@ const Cards = () => {
 			<a href="https://preactjs.com">
 				<img src="../../assets/preact-logo.svg" alt="Preact Logo" height="160" width="160" />
 			</a>
-			<h1>Cards</h1>
+			<h1>ICI ON AFFICHE LES Cards</h1>
 			
 		</div>
 		
