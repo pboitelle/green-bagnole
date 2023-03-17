@@ -12,14 +12,22 @@ const App = () => (
 	<div id="app">
 		<Header />
 		<main>
-			<Router>
-				<Home path="/" />
-				{/* <Cards path="/cards/" /> */}
-				<Profile path="/profile/" user="me" />
-				<Profile path="/profile/:user" />
-			</Router>
-			<Cards />
+			<div class="container">
+				<div>
+					<Router>
+						<Home path="/" />
+						{/* <Cards path="/cards/" /> */}
+						<Profile path="/profile/" user="me" />
+						<Profile path="/profile/:user" />
+					</Router>
+				</div>
+				<div>
+					<Cards />
+				</div>
+			</div>
+			
 		</main>
+
 	</div>
 );
 
