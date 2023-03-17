@@ -5,7 +5,7 @@ import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Cards from '../routes/cards';
+import Cards from './cards';
 import Profile from '../routes/profile';
 
 const App = () => (
