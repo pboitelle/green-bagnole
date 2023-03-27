@@ -6,7 +6,7 @@
 
 	color-scheme: light dark;
 	color: #444;
-	background: #fafafa;
+	background: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,5 +35,162 @@ body {
 @media (max-width: 639px) {
 	#app > main {
 		margin: 0 2rem;
+	}
+}
+
+.background-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+#background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#content {
+	position: absolute;
+	top: 80%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2rem;
+	text-align: left;
+	text-shadow: 1px 1px #000000;
+}
+
+#content p {
+	font-size: 1.3rem;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Pour que l'image prenne 60% de la largeur de l'écran */
+.carousel-image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto; /* centre l'image horizontalement */
+    display: block; /* affiche l'image en tant que block pour que la marge auto fonctionne */
+  }
+  
+  /* Pour que le carrousel apparaisse en dessous de l'élément en arrière-plan */
+  .carousel-container {
+    top: 100vh; /* positionne le conteneur en dessous de l'élément en arrière-plan */
+	text-align: center;
+    color: #000;
+    background: #fff;
+    width: 100%;
+    margin-top: 100vh;
+  }
+  
+  /* Pour positionner les flèches à droite et à gauche */
+  .carousel-arrow {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1; /* pour s'assurer que les flèches soient toujours au-dessus du conteneur de l'image */
+  }
+  
+  .carousel-arrow-left {
+    left: 0;
+	margin: 0 3%;
+    width: 30px;
+  }
+  
+  .carousel-arrow-right {
+    right: 0;
+	margin: 0 3%;
+    width: 30px;
+  }
+
+  .carousel-h3 {
+	text-align: center;
+    font-size: 3.5rem;
+    margin: 3%;
+  }
+
+  .carousel-p {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.3rem;
+	margin: 3%;
+  }
+
+  .carousel-p a:hover {
+	text-decoration: underline #000;
+  }
+
+  .footer {
+	background-color: rgb(3, 122, 104);
+	padding: 20px 10%;
+	color: #fff;
+	border-top: #1c1c1c 1px solid;
+}
+
+.footer_container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer_logo {
+	max-width: 150px;
+	height: auto;
+}
+
+nav {
+	margin-top: 10px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+li {
+	margin-right: 20px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.footer_container {
+		flex-direction: column;
+	}
+	
+	.footer_logo {
+		margin-bottom: 20px;
+	}
+	
+	ul {
+		margin-top: 20px;
 	}
 }

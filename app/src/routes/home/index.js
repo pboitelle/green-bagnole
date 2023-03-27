@@ -1,41 +1,25 @@
 import { h } from 'preact';
-import style from './style.css';
+import Carroussel from '../../components/carroussel';
 
-const Home = () => {
-	return (
-		<div class={style.home}>
-			<a href="https://preactjs.com">
-				<img src="../../assets/preact-logo.svg" alt="Preact Logo" height="160" width="160" />
-			</a>
-			<h1>VIDEO A METTRE DE 30SEC</h1>
-			<section>
-				<Resource
-					title="Learn Preact"
-					description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-					link="https://preactjs.com/tutorial/"
-				/>
-				<Resource
-					title="Differences to React"
-					description="If you're coming from React, check out our docs for where Preact differs"
-					link="https://preactjs.com/guide/v10/differences-to-react"
-				/>
-				<Resource
-					title="Learn Preact-CLI"
-					description="To learn more about Preact-CLI, read through the ReadMe & Wiki"
-					link="https://github.com/preactjs/preact-cli#preact-cli--"
-				/>
-			</section>
+const images = [
+  '../../assets/car-one.webp',
+  '../../assets/car-two.webp',
+];
+const Home = () => (
+	<div>
+		<div class='background-container'>
+			<video autoplay loop muted id="background-video">
+				<source src="./assets/bg-video.mp4" type="video/mp4"/>
+			</video>
+			<div id="content">
+				<h2>Aston Martin</h2>
+				<p>Ce qu'aime la britanique ce n'ai pas seulement la voiture ou la course, c'est son paysage, protégez le.</p>
+				<p>Pour un cours trajet, privilégié la marche ou le vélo au lieu d'une voiture</p>
+			</div>
 		</div>
-	);
-};
-
-const Resource = props => {
-	return (
-		<a href={props.link} class={style.resource}>
-			<h2>{props.title}</h2>
-			<p>{props.description}</p>
-		</a>
-	);
-};
+		<Carroussel images={images} />
+	</div>
+	
+);
 
 export default Home;
