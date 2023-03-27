@@ -19,6 +19,7 @@ npm run serve
 npm run test
 
 # deploy in vercel
+cd app/
 vercel deploy
 ```
 

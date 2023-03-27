@@ -1,18 +1,25 @@
 import { h } from 'preact';
-import style from './style.css';
+import Carroussel from '../../components/carroussel';
 
-const Home = () => {
-	return (
-		<div class={style.home}>
-			<a href="https://preactjs.com">
-				<img src="../../assets/preact-logo.svg" alt="Preact Logo" height="160" width="160" />
-			</a>
-			<video width="640" height="360" controls>
-				<source src="./assets/pub_voiture.mp4" type="video/mp4"></source>
+const images = [
+  '../../assets/car-one.webp',
+  '../../assets/car-two.webp',
+];
+const Home = () => (
+	<div>
+		<div class='background-container'>
+			<video autoplay loop muted id="background-video">
+				<source src="./assets/bg-video.mp4" type="video/mp4"/>
 			</video>
+			<div id="content">
+				<h2>Aston Martin</h2>
+				<p>Ce qu'aime la britanique ce n'ai pas seulement la voiture ou la course, c'est son paysage, protégez le.</p>
+				<p>Pour un cours trajet, privilégié la marche ou le vélo au lieu d'une voiture</p>
+			</div>
 		</div>
-	);
-};
-
+		<Carroussel images={images} />
+	</div>
+	
+);
 
 export default Home;
