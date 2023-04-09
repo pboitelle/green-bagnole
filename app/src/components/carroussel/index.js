@@ -36,22 +36,32 @@ class Carroussel extends Component {
     return (
       <div class="carousel">
         <div class="carousel-container">
-          {images.length && (
-            <picture>
-              <source srcSet={images[currentImageIndex]} type="image/webp"/>
-              <img src={images[currentImageIndex]} alt="" loading="lazy" class="carousel-image" />
-            </picture>
-          )}
-          <div class="carousel-arrow">
-            <button onClick={this.handleClickPrevious} class="carousel-arrow-left">←</button>
-            <button onClick={this.handleClickNext} class="carousel-arrow-right">→</button>
+          <div class="carousel-background-image">
+            <div class="bg-top">
+              <image id="background-image">
+                <source src="./assets/bg-carroussel-top.webp" type="image/webp"/>
+              </image>
+              <div class="bg-color"></div>
+            </div>
+            <div class="bg-bottom">
+              <image id="background-image">
+                <source src="../assets/bg-carroussel-bottom.webp" type="image/webp"/>
+              </image>
+              <div class="bg-color"></div>
+              </div>
+            {images.length && (
+              <picture>
+                <source srcSet={images[currentImageIndex]} type="image/webp"/>
+                <img src={images[currentImageIndex]} alt="" loading="lazy" class="carousel-image" />
+              </picture>
+            )}
+            <div class="carousel-arrow">
+              <button onClick={this.handleClickPrevious} class="carousel-arrow-left">←</button>
+              <button onClick={this.handleClickNext} class="carousel-arrow-right">→</button>
+            </div>
           </div>
         </div>
-        <h3 class="carousel-h3">DB11</h3>
-        <div class="carousel-p">
-            <a class="carousel-a" href="/">Découverte →</a>
-            <a class="carousel-a" href="/">Caractéristique →</a>
-        </div>
+
       </div>
     );
   }

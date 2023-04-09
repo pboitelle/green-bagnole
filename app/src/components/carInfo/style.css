@@ -1,0 +1,28 @@
+.CarInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20%;
+    margin-top: 2%;
+  }
+  
+  .CarInfo ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .CarInfo li {
+    margin-bottom: 10px;
+  }
+  
+  .CarInfo p {
+    margin: 0;
+  }
+  
+  .CarPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
