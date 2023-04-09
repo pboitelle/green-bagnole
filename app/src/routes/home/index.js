@@ -17,7 +17,15 @@ const Home = () => (
 				<p>Pour un cours trajet, privilégié la marche ou le vélo au lieu d'une voiture</p>
 			</div>
 		</div>
-		<Carroussel images={images} />
+		<div class="carroussel-homepage">
+			<Carroussel images={images}/>
+			<h3 class="carousel-h3">DB11</h3>
+			<div class="carousel-p">
+				<a class="carousel-a" href="/car">Découverte →</a>
+				<a class="carousel-a" href="/car">Caractéristique →</a>
+			</div>
+		</div>
+		
 	</div>
 	
 );
