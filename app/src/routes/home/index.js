@@ -24,7 +24,7 @@ const Home = () => (
 			</div>
 		</div>
 		<div class="carroussel-homepage">
-			<Carroussel images={images} lazyLoad={true}/>
+			<Carroussel images={images}/>
 			<h3 class="carousel-h3">DB11</h3>
 			<div class="carousel-p">
 				<a class="carousel-a" href="/car">Découverte →</a>
