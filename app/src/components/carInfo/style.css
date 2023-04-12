@@ -26,3 +26,23 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  @media only screen and (max-width: 767px) {
+    .CarInfo {
+      flex-direction: column;
+      margin-bottom: 10%;
+    }
+  
+    .CarInfo ul {
+      margin-top: 5%;
+    }
+  
+    .CarInfo li {
+      margin-bottom: 5px;
+    }
+  
+    .CarPrice {
+      font-size: 1.2rem;
+    }
+  }
+  
