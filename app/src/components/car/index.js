@@ -10,7 +10,7 @@ const images = [
 const Car = () => {
   return (
     <div className="discovery-page">
-      <Carroussel images={images} />
+      <Carroussel images={images} lazyLoad={true}/>
       <h3 class="carousel-h3">DB11</h3>
       <CarInfo />
     </div>
