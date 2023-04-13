@@ -1,9 +1,3 @@
 User-agent: *
-Disallow: /admin
-Disallow: /private
-Disallow: /secret
-Disallow: /logout
-Disallow: /login
-Disallow: /register
-
-    
+Disallow: /
+Disallow: /car
