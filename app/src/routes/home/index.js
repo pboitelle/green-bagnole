@@ -5,9 +5,6 @@ import Carroussel from '../../components/carroussel';
 import EngineeringPerformance from '../../components/engineeringPerformance';
 import TwoImg from '../../components/twoimg';
 
-import Helmet from 'preact-helmet';
-
-
 const images = [
 	'../../assets/car-one.webp',
 	'../../assets/car-two.webp',
