@@ -17,7 +17,7 @@ const Car = () => {
             { name: 'keywords', content: 'Description de la voiture DB11' },
           ]}
         />
-      <Carroussel images={images} lazyLoad={true}/>
+      <Carroussel images={images}/>
       <h3 class="carousel-h3">DB11</h3>
       <CarInfo />
     </div>
