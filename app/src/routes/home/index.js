@@ -1,6 +1,9 @@
 import { h } from 'preact';
 import Carroussel from '../../components/carroussel';
 
+import Helmet from 'preact-helmet';
+
+
 const images = [
   {
     src: '../../assets/car-one.webp',
@@ -13,6 +16,13 @@ const images = [
 ];
 const Home = () => (
 	<div>
+		<Helmet	
+			title="Aston Martin Homepage" 
+			meta={[
+				{ name: 'description', content: 'Site de presentation du site Aston Martin et de toutes ses voitures' },
+				{ name: 'keywords', content: 'Aston Martin' },
+			]}
+		/>
 		<div class='background-container'>
 			<video autoplay loop muted id="background-video">
 				<source src="./assets/bg-video.mp4" type="video/mp4"/>
