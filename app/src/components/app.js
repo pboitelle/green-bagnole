@@ -17,7 +17,7 @@ const App = () => (
         <div>
           <Router>
             <Home path="/" />
-            <Car path="/car" />
+            <Car path="/car1" />
           </Router>
         </div>
       </div>

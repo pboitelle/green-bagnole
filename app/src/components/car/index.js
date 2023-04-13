@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import Carroussel from '../carroussel';
 import CarInfo from '../carInfo';
+import Helmet from 'preact-helmet';
 
 const images = [
   '../../assets/car-one.webp',
@@ -17,7 +18,7 @@ const Car = () => {
             { name: 'keywords', content: 'Description de la voiture DB11' },
           ]}
         />
-      <Carroussel images={images}/>
+      <Carroussel images={images} lazyLoad={true}/>
       <h3 class="carousel-h3">DB11</h3>
       <CarInfo />
     </div>
