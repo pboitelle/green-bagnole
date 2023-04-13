@@ -1,26 +1,24 @@
 import { h } from 'preact';
+import Helmet from "preact-helmet";
+
 import Carroussel from '../../components/carroussel';
+import EngineeringPerformance from '../../components/engineeringPerformance';
+import TwoImg from '../../components/twoimg';
 
 import Helmet from 'preact-helmet';
 
 
 const images = [
-  {
-    src: '../../assets/car-one.webp',
-    alt: 'Aston Martin car one',
-  },
-  {
-    src: '../../assets/car-two.webp',
-    alt: 'Aston Martin car two',
-  },
-];
+	'../../assets/car-one.webp',
+	'../../assets/car-two.webp',
+  ];
 const Home = () => (
 	<div>
-		<Helmet	
-			title="Aston Martin Homepage" 
+		<Helmet 
+			title="Aston Martin HomePage" 
 			meta={[
-				{ name: 'description', content: 'Site de presentation du site Aston Martin et de toutes ses voitures' },
-				{ name: 'keywords', content: 'Aston Martin' },
+				{"name": "description", "content": "Aston Martin Home Page"},
+				{"name": "keywords", "content": "aston martin, car, homepage"}
 			]}
 		/>
 		<div class='background-container'>
@@ -41,7 +39,8 @@ const Home = () => (
 				<a class="carousel-a" href="/car">Caractéristique →</a>
 			</div>
 		</div>
-		
+		<EngineeringPerformance />
+		<TwoImg />
 	</div>
 	
 );

@@ -6,7 +6,7 @@ import Footer from './footer';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Car from './car';
+import Car from '../routes/car';
 
 
 const App = () => (
@@ -17,7 +17,7 @@ const App = () => (
         <div>
           <Router>
             <Home path="/" />
-            <Car path="/car" />
+            <Car path="/car1" />
           </Router>
         </div>
       </div>

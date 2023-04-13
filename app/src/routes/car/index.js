@@ -1,7 +1,7 @@
 import { h } from 'preact';
-import Carroussel from '../carroussel';
-import CarInfo from '../carInfo';
-import Helmet from 'preact-helmet';
+import Carroussel from '../../components/carroussel';
+import CarInfo from '../../components/carInfo';
+import Helmet from "preact-helmet";
 
 const images = [
   '../../assets/car-one.webp',
@@ -11,11 +11,11 @@ const images = [
 const Car = () => {
   return (
     <div className="discovery-page">
-        <Helmet	
-          title="Voiture DB11" 
+        <Helmet 
+          title="Aston Martin DB11" 
           meta={[
-            { name: 'description', content: 'Description de la voiture DB11' },
-            { name: 'keywords', content: 'Description de la voiture DB11' },
+            {"name": "description", "content": "Aston Martin DB11"},
+            {"name": "keywords", "content": "aston martin, car, DB11"}
           ]}
         />
       <Carroussel images={images} lazyLoad={true}/>

@@ -40,7 +40,7 @@ class Carroussel extends Component {
             {images.length && (
               <picture>
                 <source srcSet={images[currentImageIndex]} type="image/webp"/>
-                <img src={images[currentImageIndex]} alt="" loading="lazy" class="carousel-image" />
+                <img src={images[currentImageIndex]} alt="car" loading="lazy" class="carousel-image" />
               </picture>
             )}
             <div class="carousel-arrow">
