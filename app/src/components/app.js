@@ -6,8 +6,7 @@ import Footer from './footer';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Car from './car';
-import Cards from './cards';
+import Car from '../routes/car';
 
 
 const App = () => (
@@ -19,7 +18,6 @@ const App = () => (
           <Router>
             <Home path="/" />
             <Car path="/car" />
-            <Cards path="/cards" />
           </Router>
         </div>
       </div>

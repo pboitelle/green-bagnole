@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "preact": "^10.11.3",
+    "preact-helmet": "^4.0.0-alpha-3",
     "preact-render-to-string": "^5.2.6",
     "preact-router": "^3.2.1"
   },

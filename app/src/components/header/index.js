@@ -7,7 +7,7 @@ const Header = () => (
 		<a href="/" class={style.logo}>
 			<picture>
 				<source srcSet="../../assets/aston-martin-logo-png-transparent.webp" type="image/webp" />
-				<img height="90" width="90" decoding="async" loading="lazy" src="../../assets/aston-martin-logo-png-transparent.webp" alt="an avif image" />
+				<img height="auto" width="90" decoding="async" loading="lazy" src="../../assets/aston-martin-logo-png-transparent.webp" alt="an avif image" />
 			</picture>
 			
 		</a>

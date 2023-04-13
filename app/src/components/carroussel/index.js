@@ -37,22 +37,10 @@ class Carroussel extends Component {
       <div class="carousel">
         <div class="carousel-container">
           <div class="carousel-background-image">
-            <div class="bg-top">
-              <image id="background-image">
-                <source src="./assets/bg-carroussel-top.webp" type="image/webp"/>
-              </image>
-              <div class="bg-color"></div>
-            </div>
-            <div class="bg-bottom">
-              <image id="background-image">
-                <source src="../assets/bg-carroussel-bottom.webp" type="image/webp"/>
-              </image>
-              <div class="bg-color"></div>
-              </div>
             {images.length && (
               <picture>
                 <source srcSet={images[currentImageIndex]} type="image/webp"/>
-                <img src={images[currentImageIndex]} alt="" loading="lazy" class="carousel-image" />
+                <img src={images[currentImageIndex]} alt="car" loading="lazy" class="carousel-image" />
               </picture>
             )}
             <div class="carousel-arrow">
