@@ -5,15 +5,10 @@ import Helmet from 'preact-helmet';
 
 
 const images = [
-  {
-    src: '../../assets/car-one.webp',
-    alt: 'Aston Martin car one',
-  },
-  {
-    src: '../../assets/car-two.webp',
-    alt: 'Aston Martin car two',
-  },
-];
+	'../../assets/car-one.webp',
+	'../../assets/car-two.webp',
+  ];
+  
 const Home = () => (
 	<div>
 		<Helmet	
